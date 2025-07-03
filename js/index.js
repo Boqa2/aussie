@@ -9,6 +9,8 @@ const swiperContText = document.querySelector(".text-container");
 const slideText = document.querySelectorAll(".text-slider");
 const nextButton = document.querySelector(".next");
 const prevButton = document.querySelector(".prev");
+const glavno = document.querySelector(".glavno");
+const container = document.querySelector(".container");
 
 const textMiracle = [
   {
@@ -85,6 +87,11 @@ bottles.forEach((bottle) => {
 
       if (available.length === 0) {
         console.log("✅ Последняя транс-картинка остаётся");
+        setTimeout(() => {
+          glavno.classList.add("hidden");
+          container.classList.remove("hidden");
+        }, 3000);
+
         shownImages.add(choose);
         currentQuestionIndex++;
         return;
