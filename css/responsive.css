@@ -1,0 +1,116 @@
+@media (max-width: 400px) {
+  .phone {
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  .screen {
+    border: none;
+    border-radius: 0;
+  }
+  .swipe {
+    display: none;
+  }
+  .notch {
+    display: none;
+  }
+}
+
+@media (max-height: 400px) {
+  .phone {
+    border-radius: 0;
+    border: none;
+    width: 800px;
+    height: 100%;
+  }
+  .screen {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .swipe {
+    display: none;
+  }
+  .notch {
+    display: none;
+  }
+  .modal {
+    background: rgba(0, 0, 0, 0.533);
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .glavno {
+    background: url("../assets/BG\ \(2\).png") top/cover no-repeat;
+    flex-direction: row;
+    display: flex;
+  }
+  .bottle-miracle {
+    margin-top: 50px;
+  }
+  .over {
+    display: block;
+    width: 85%;
+    height: 88%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .play-now{
+    width: 150px;
+    height: 9%;
+    font-size: 19px;
+    z-index: 1;
+    bottom: 24%;
+  }
+  .image {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .logo {
+    width: 50%;
+    right: -100px;
+    bottom: 40px;
+  }
+  .container{
+    flex-direction: row;
+    display: flex;
+    padding-top: 20px;
+  }
+  .hedding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .for-bottle{
+    height: 100%;
+    padding-left: 60px;
+  }
+  .content{
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+  }
+  .swipe-container{
+    width: 80%;
+    height: 70%;
+  }
+  .next{
+    top: 45.5%;
+  }
+  .i{
+    padding-right:40px ;
+  }
+  .text-container{
+    width: 100%;
+    height: 100%;
+  }
+  .hidden{
+    display: none;
+  }
+}

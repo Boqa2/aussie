@@ -2,6 +2,7 @@ const bottles = document.querySelectorAll(".bottle");
 const resultTexts = document.querySelectorAll(".text-miracle .r");
 const questionContainer = document.querySelector(".question");
 const modal = document.querySelector(".modal");
+const modal_img = document.querySelector(".over");
 const shownImages = new Set();
 const swiperCont = document.querySelector(".swipe-container");
 const slide = document.querySelectorAll(".slider");
@@ -11,6 +12,44 @@ const nextButton = document.querySelector(".next");
 const prevButton = document.querySelector(".prev");
 const glavno = document.querySelector(".glavno");
 const container = document.querySelector(".container");
+
+const imageFiles = [
+  "logo.png",
+  "banner.png",
+  "BG (1).png",
+  "BG (2).png",
+  "3.png",
+  "first.png",
+  "MIRACLE CURLS CN 12.1oz.png",
+  "MIRACLE VOLUME CN 12.1oz.png",
+  "MIRACLE WAVES CN 12.1oz.png",
+  "TOTAL MIRACLE CN 12.1oz.png",
+  "Total Miracle-Trans.png",
+  "Total Miracle.png",
+  "Miracle Volume.png",
+  "Miracle Volume-Tran.png",
+  "Miracle Waves.png",
+  "Miracle Waves-Trans.png",
+  "Miracle Curls.png",
+  "Miracle Curls-Trans.png",
+  "Product1.png",
+  "Product2.png",
+  "Product3.png",
+  "Product4.png",
+  "Product5.png",
+  "Product6.png",
+  "Product7.png",
+  "Product8.png",
+];
+
+imageFiles.forEach((file) => {
+  const link = document.createElement("link");
+  link.rel = "preload";
+  link.as = "image";
+  link.href = `assets/${file}`;
+  link.type = "image/png";
+  document.head.appendChild(link);
+});
 
 const textMiracle = [
   {
@@ -123,8 +162,8 @@ bottles.forEach((bottle) => {
   });
 });
 
-function PlayNow() {
-  modal.classList.add("hidden");
+function PlayNow() { 
+  modal.style.zIndex = "-10000" 
   showNextQuestion();
 }
 
