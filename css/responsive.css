@@ -12,8 +12,54 @@
   .swipe {
     display: none;
   }
+  .kill{
+    width: 90%;
+  }
+  .container-img{
+    width: 85%;
+    height: 45%;
+  }
+  .glavno{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 25px;
+  } 
+  .text-miracle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .r{
+    width: 80%;
+  }
   .notch {
     display: none;
+  }
+  .hidden{
+    display: none;
+  }
+  .container{
+    padding-top: 20px;
+  }
+
+  .for-bottle{
+    height: 120%;
+  }
+
+  .text-container{
+    height: 80%;
+
+  }
+.next{
+    top: 35.5%;
+  }
+.learn{
+  height: 50px;
+}
+  .for-text{
+    height: 100%;
   }
 }
 
